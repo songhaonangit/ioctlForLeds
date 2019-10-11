@@ -1,2 +1,2 @@
 # ioctlForLeds
-MTK 平台通过JNI  ioctl 控制LED 灯
+MTK 平台 android N   ioctl 控制LED 灯
