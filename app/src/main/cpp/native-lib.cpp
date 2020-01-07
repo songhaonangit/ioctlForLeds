@@ -17,6 +17,9 @@
 #define SIXLEDS_IOCTL_SET_LED5		_IOW(SIXLEDS, 0x5, int)
 #define SIXLEDS_IOCTL_SET_LED6		_IOW(SIXLEDS, 0x6, int)
 
+//#define HALL1   'Z'
+//#define HALL1_IOCTL_GET_STATUS   _IOR(HALL1,0x1,int)
+
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_getcharmsmart_myapplication_MainActivity_stringFromJNI(
         JNIEnv* env,
@@ -70,6 +73,9 @@ Java_com_getcharmsmart_myapplication_MainActivity_ioctl(
         case 6:
             dev_cmd = SIXLEDS_IOCTL_SET_LED6;
             break;
+       //case 7:
+        //    dev_cmd = HALL1_IOCTL_GET_STATUS;
+        //    break;
         default:
             break;
     }
